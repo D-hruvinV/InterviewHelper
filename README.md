@@ -2,6 +2,9 @@
 
 InterviewHelper is a web application that simulates real interviews using AI powered by Google Gemini. It simply gives you quick questions in interview manner of topic of your choice.
 
+Demo: https://interview-helper-tawny.vercel.app/
+for best experience try locally
+
 ## Features
 
 - AI-generated, progressive interview questions starting from basic to advanced levels
