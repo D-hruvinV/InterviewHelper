@@ -26,7 +26,7 @@ export default function Interview({ topic, onFinish }) {
 
   const generateQuestion = async (lastAnswer = "") => {
     setLoading(true);
-    const res = await axios.post(`${import.meta.env.REACT_APP_BACKEND_URL}/api/generate-question`, {
+    const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/generate-question`, {
       topic,
       history,
       lastAnswer
@@ -40,7 +40,7 @@ export default function Interview({ topic, onFinish }) {
 
   const handleSubmit = async () => {
     setLoading(true);
-    const res = await axios.post(`${import.meta.env.REACT_APP_BACKEND_URL}/api/analyze-answer`, {
+    const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/analyze-answer`, {
       question,
       answer,
     });
@@ -57,7 +57,7 @@ export default function Interview({ topic, onFinish }) {
     } else {
       // After last question, get overall grade from AI
       setLoading(true);
-      const overallRes = await axios.post(`${import.meta.env.REACT_APP_BACKEND_URL}/api/overall-grade`, {
+      const overallRes = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/overall-grade`, {
         history: newHistory
       });
       setOverall(overallRes.data);
