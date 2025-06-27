@@ -26,8 +26,8 @@ InterviewHelper is a web application that simulates real interviews using AI pow
 ### Installation
 
 1. Clone the repository
-2. Install backend dependencies and set up environment variables
-3. Install frontend dependencies
+2. Install backend dependencies and set up environment variables , GEMINI_API_KEY
+3. Install frontend dependencies and set up envirnment variables , BACKEND_URL
 4. Run backend and frontend servers
 
 ### Running the App
